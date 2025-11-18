@@ -555,12 +555,12 @@ body{
     transform: rotate(-30deg);
 }
 #navigation-bar img{
-    height: 55px;
+    height: 30px;
     position: absolute;
     ;
-    top: 30%;
+    top: 20%;
     left: 25px;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all .4s ease;
     pointer-events: none;
     z-index: 1;
