@@ -261,6 +261,32 @@ body{
     padding-right: 25px;  
 }
 
+/* Centered tagline in the top navigation bar */
+#navigation-bar .nav-tagline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Barlow', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    font-weight:250;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 16;
+}
+
+@media (max-width: 768px) {
+    #navigation-bar .nav-tagline {
+        font-size: 14px;
+        max-width: 80%;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
 /* Offset navigation links when nav-name is present (home page) */
 #navigation-bar.home .navigation-links {
     margin-left: -80px;
@@ -587,7 +613,7 @@ body{
 
 }
 .header-content{
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     float: left;
     display: flex;
